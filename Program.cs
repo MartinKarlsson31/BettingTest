@@ -36,6 +36,7 @@
             {
                 Console.WriteLine("Ogiltig inmatning. Var god ange ett heltal.");
             }
+            // jaja jaj ajajaj ja 
 
             //lägga till fler funktioner och regler efter behov för att göra spelet mer avancerat och intressant.
             // 18års gräns
