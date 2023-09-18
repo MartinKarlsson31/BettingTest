@@ -44,6 +44,7 @@
             // göra en meny
             // Gömd skatt/bonus
             // skapa medveta fel
+            // Malin testar 1
         }
     }
 }
