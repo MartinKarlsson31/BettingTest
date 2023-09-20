@@ -2,7 +2,7 @@
 {
     internal partial class MyBetting
     {
- 
+
         public void start()
         {
             while (true)
@@ -11,20 +11,25 @@
                 Console.WriteLine("Välkommen till Casono Avengers, välj ett av alternativen");
                 Console.WriteLine("1. spela gissa numret");
                 Console.WriteLine("2. Sätt in pengar");
-                Console.WriteLine("3. Logga ut");
+                Console.WriteLine("3. Spela Sten, Sax, Påse");
+                Console.WriteLine("4. Logga ut");
                 Console.Write("Knappa in ditt val : ");
 
                 int input = inputNr();
                 Console.Clear();
 
-                switch (input) 
+                switch (input)
                 {
                     case 1:
                         Guessnr();
-                        break; 
+                        break;
                     case 2:
-                        Deposit(); 
-                        break;   
+                        Deposit();
+                        break;
+                    case 3:
+                        RockPaperScissors game = new RockPaperScissors();
+                        game.PlayRPS(); ;
+                        break;
                 }
             }
         }
