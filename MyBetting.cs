@@ -9,7 +9,7 @@
             {
                 //Skapa ett enkelt inlogg???? hej hej 
                 Console.WriteLine("Välkommen till Casono Avengers, välj ett av alternativen");
-                Console.WriteLine("1. spela gissa numret");
+                Console.WriteLine("1. Spela gissa numret");
                 Console.WriteLine("2. Sätt in pengar");
                 Console.WriteLine("3. Logga ut");
                 Console.Write("Knappa in ditt val : ");
@@ -28,13 +28,6 @@
                 }
             }
         }
-
-
-
-
-
-
-
 
         private int inputNr()
         {

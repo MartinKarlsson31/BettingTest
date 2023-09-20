@@ -8,11 +8,22 @@ namespace Betting
 {
     internal partial class MyBetting
     {
+        private double saldo;
         private void Deposit()
         {
-            Console.Write("Sätt in pengar");
-            Console.ReadKey();
-            
+            Console.WriteLine("Välkommen till bank Casono Avengers!");
+            Console.WriteLine($"Ditt nuvarande saldo är:{saldo}");
+
+            Console.Write("Ange belopp att sätta in: ");
+            double insättning = double.Parse(Console.ReadLine());
+
+            saldo += insättning;
+
+            Console.WriteLine($"Ditt nya saldo är: {saldo}");
+
+            Console.WriteLine("Tack för att du använder vår bank!");
+            Console.WriteLine("tryck enter för att komma tillbaka till huvudmenyn");
+            Console.ReadLine();
         }
     }
 }
