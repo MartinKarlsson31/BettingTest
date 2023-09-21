@@ -12,7 +12,8 @@
                 Console.WriteLine("1. Spela gissa numret");
                 Console.WriteLine("2. Sätt in pengar");
                 Console.WriteLine("3. Spela Sten, Sax, Påse");
-                Console.WriteLine("4. Logga ut");
+                Console.WriteLine("4. Valutaomvandlare");
+                Console.WriteLine("5. Logga ut");
                 Console.Write("Knappa in ditt val : ");
 
                 int input = inputNr();
@@ -30,8 +31,20 @@
                         RockPaperScissors game = new RockPaperScissors();
                         game.PlayRPS(); ;
                         break;
+                    case 4:
+                        Valutaomvandlare();
+                        break;
+                    default:
+                        Console.WriteLine("Ogiltigt val. Försök igen.");
+                        break;
+
                 }
             }
+        }
+
+        private void Valutaomvandlare()
+        {
+            throw new NotImplementedException();
         }
 
         private int inputNr()
