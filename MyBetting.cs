@@ -44,7 +44,7 @@
                         game.PlayRPS(); ;
                         break;
                     case 4:
-                        Valutaomvandlare();
+                        CurrencyConverter();
                         break;
                     default:
                         Console.WriteLine("Ogiltigt val. Försök igen.");
@@ -64,10 +64,10 @@
             return inputUsername == userName && inputPassword == password;
         }
 
-        private void Valutaomvandlare()
-        {
-            throw new NotImplementedException();
-        }
+        //private void Valutaomvandlare()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         private int inputNr()
         {
