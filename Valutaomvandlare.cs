@@ -6,15 +6,9 @@ using System.Threading.Tasks;
 
 namespace Betting
 {
-    internal class Valutaomvandlare
+    internal partial class MyBetting
     {        
-        public static void Main(string[] args)
-        {
-            Valutaomvandlare valutaomvandlare = new Valutaomvandlare();
-            valutaomvandlare.CurrencyConverter();
-        }
-
-        private void CurrencyConverter()
+        public void CurrencyConverter()
         {
             Console.WriteLine("Valutaomvandlare");
             Console.WriteLine("1. SEK till EUR");
@@ -47,21 +41,21 @@ namespace Betting
             }
         }
 
-        private double ConvertSekToEur(double sekAmount)
+        public double ConvertSekToEur(double sekAmount)
         {            
             double exchangeRate = 0.12; 
             double eurAmount = sekAmount * exchangeRate;
             return eurAmount;
         }
 
-        private double ConvertEurToSek(double eurAmount)
+        public double ConvertEurToSek(double eurAmount)
         {            
             double exchangeRate = 14.0; 
             double sekAmount = eurAmount * exchangeRate;
             return sekAmount;
         }
                
-        private int InputNr()
+        public int InputNr()
         {
             int result;
             while (!int.TryParse(Console.ReadLine(), out result))
@@ -71,7 +65,7 @@ namespace Betting
             return result;
         }
 
-        private double InputDouble()
+        public double InputDouble()
         {
             double result;
             while (!double.TryParse(Console.ReadLine(), out result))
