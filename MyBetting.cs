@@ -2,9 +2,21 @@
 {
     internal partial class MyBetting
     {
+        //Hårdkodad inloggning
+        private string userName = "admin"; 
+        private string password = "tiger123";
 
         public void start()
         {
+
+            Console.WriteLine("Välkommen till Casono Avengers!");
+
+            if(!Login()) //log-in check
+            {
+                Console.WriteLine("Felkatiga inloggnignsuppgifter.");
+                return;
+            }
+
             while (true)
             {
                 // testing
@@ -40,6 +52,16 @@
 
                 }
             }
+        }
+
+        private bool Login() //log-in metoden
+        {
+            Console.Write("Ange ditt användarnamn: ");
+            string inputUsername = Console.ReadLine();
+            Console.Write("Ange ditt lösenord: ");
+            string inputPassword = Console.ReadLine();
+
+            return inputUsername == userName && inputPassword == password;
         }
 
         private void Valutaomvandlare()
