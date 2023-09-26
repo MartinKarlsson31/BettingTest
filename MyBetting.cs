@@ -7,7 +7,7 @@
         {
             while (true)
             {
-                //Skapa ett enkelt inlogg???? hej hej 
+                // testing
                 Console.WriteLine("Välkommen till Casono Avengers, välj ett av alternativen");
                 Console.WriteLine("1. Spela gissa numret");
                 Console.WriteLine("2. Sätt in pengar");
