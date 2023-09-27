@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Betting
 {
-    internal partial class MyBetting
+    public partial class MyBetting
     {
         private double saldo;
         private void Deposit()

@@ -1,6 +1,6 @@
 ﻿namespace Betting
 {
-    internal partial class MyBetting
+    public partial class MyBetting
     {
         //Hårdkodad inloggning
         private string userName = "admin"; 
@@ -69,6 +69,10 @@
         //    throw new NotImplementedException();
         //}
 
+        public bool LoginWithInput(string inputUsername, string inputPassword)
+        {
+            return inputUsername == userName && inputPassword == password;
+        }
         private int inputNr()
         {
             int nr;
